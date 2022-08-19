@@ -17,3 +17,12 @@ let papper = document.querySelector(".bpapper");
 let scissors = document.querySelector(".bscissors");
 let spock = document.querySelector(".bspock");
 let lizard = document.querySelector(".blizard");
+
+// The functions
+
+function playthegame() {
+    play.addEventListener("click", function() {
+        cover2.style.display = "grid";
+        cover1.style.display = "none";
+     })
+}
