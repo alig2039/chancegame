@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML & CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <!-- The code below is directed to the opennig screen of the game-->
+
+    <section class="cover1">
+        <div class="comscore">
+            <h3 class="textCom">THE CHANCE GAME</h3>
+        </div>
+        <div class="youscore">
+            <h3 class="textYou"></h3>
+        </div>
+        <div class="youscore">
+            <h3 class="textYou">Game Objective.</h3>
+        </div>
+        <div class="youscore">
+            <h3 class="textYou">The objective of the game is to beat the computer to a score of 5.</h3>
+        </div>
+        <div class="youscore">
+            <h3 class="textYou"></h3>
+        </div>
+        <div class="youscore">
+            <h3 class="textYou">HOW TO PLAY</h3>
+        </div>
+        <div class="youscore">
+            <h3 class="textYou">1. Click/tap the play button to proceed to the game screen.</h3>
+        </div>
+        <div class="youscore">
+            <h3 class="textYou">2. Click/tap one of the 5 buttons indicating either Rock, Papper, Scossors, Spock, or Lizard.</h3>
+        </div>
+        <div class="youscore">
+            <h3 class="textYou">3. If the combination of COM and YOU is in your favour, then you will gain 1 point.</h3>
+        </div>
+        <div class="youscore">
+            <h3 class="textYou"></h3>
+        </div>
+        <div class="youscore">
+            <h3 class="textYou">Enjoy!</h3>
+        </div>
+
+        <div class="button">
+            <div class="play">
+                <button><h3 class="playgame">Play Game</h3></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- The code above is directed to the opennig screen of the game-->
+    
+    <!-- The code below is directed to the actual game screen-->
+    
+    <section class="cover2">
+        <div class="comscore">
+            <h3 class="textCom">COM :<span id="textcom1"> 0</span></h3>
+        </div>
+        <div class="youscore">
+            <h3 class="textYou">YOU :<span id="textyou1"> 0</span></h3>
+        </div>
+
+        <div class="buttons">
+            <div class="brock">
+                <button><img src="/assets/images/Rock.png" alt="#"></button>
+                <p><span class="textRock">Rock</span></p>
+            </div>
+            <div class="bpapper">
+                <button><img src="/assets/images/Papper.png" alt="#"></button>
+                <p><span class="textPapper">Paper</span></p>
+            </div>
+            <div class="bscissors">
+                <button><img src="/assets/images/Scissors.png" alt="#"></button>
+                <p><span class="textScissors">Scissors</span></p>
+            </div>
+            <div class="bspock">
+                <button><img src="/assets/images/Spock.png" alt="#"></button>
+                <p><span class="textSpock">Spock</span></p>
+            </div>
+            <div class="blizard">
+                <button><img src="/assets/images/Lizard.png" alt="#"></button>
+                <p><span class="textLizard">Lizard</span></p>
+            </div>
+        </div>
+
+        <div class="comresult">
+            <h4>COM :<span id="comresult"> ...</span></h4>
+        </div>
+        <div class="youresult">
+            <h4>YOU :<span id="youresult"> ...</span></h4>
+        </div>
+        <div class="result">
+            <h4>RESULT :<span id="result"> ...</span></h4>
+        </div>
+    </section>
+
+    <!-- The code above is directed to the actual game screen-->
+
+    <!-- The code below is directed to the game end screen-->
+
+    <section class="cover3">
+        <div class="comscore">
+            <h3 class="textCom">THE CHANCE GAME</h3>
+        </div>
+        
+        <div class="youscore">
+            <h3 class="textYou"><span id="result"> ...</span></h3>
+        </div>
+
+        <div class="button1">
+            <div class="playagain">
+                <button><h3 class="playagain1">Play Again</h3></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- The code below is directed to the game end screen-->
+<script src="/assets/js/game.js"></script>
+</body>
+</html>
