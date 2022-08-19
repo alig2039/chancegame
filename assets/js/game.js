@@ -26,3 +26,96 @@ function playthegame() {
         cover1.style.display = "none";
      })
 }
+
+playthegame();
+
+function computerChoice() {
+    let choice = ["rock", "paper", "scissors", "spock", "lizard"];
+    let comRandom = Math.floor(Math.random() * 5)
+    return choice[comRandom];
+    console.log(comRandom);
+}
+computerChoice();
+
+function won(you, comp) {
+    youscore++;
+    youScore.textContent = " " + youscore;
+    youresult.textContent = " " + you;
+    comresult.textContent = " " + comp;
+    result.textContent = " " + "YOU WON";
+}
+
+function lost(you, comp) {
+    comscore++;
+    comScore.textContent = " " + comscore;
+    youresult.textContent = " " + you;
+    comresult.textContent = " " + comp;
+    result.textContent = " " + "YOU LOST";
+}
+
+function draw(you, comp) {
+    youresult.textContent = " " + you;
+    comresult.textContent = " " + comp;
+    result.textContent = " " + "IT'S A TIE";
+}
+
+function game(youChoice) {
+    let compChoice = computerChoice();
+    switch (youChoice + compChoice) {
+        case "rockscissors":
+        case "rockspock":
+        case "rocklizard":
+        case "paperrock":
+        case "scissorspaper":
+        case "scissorsspock":
+        case "scissorslizard":
+        case "spockpaper":
+        case "spocklizard":
+        case "lizardpaper":
+            won(youChoice, compChoice);
+            break;
+        case "rockpaper":
+        case "paperscissors":
+        case "paperspock":
+        case "paperlizard":
+        case "scissorsrock":
+        case "spockrock":
+        case "spockscissors":
+        case "lizardrock":
+        case "lizardscissors":
+        case "lizardspock":
+            lost(youChoice, compChoice);
+            break;
+        case "rockrock":
+        case "paperpaper":
+        case "scissorsscissors":
+        case "spockspock":
+        case "lizardlizard":
+            draw(youChoice, compChoice);
+            break;
+    }
+}
+
+function theGame () {
+    rock.addEventListener("click", function() {
+        game("rock")
+    })
+
+    papper.addEventListener("click", function() {
+        game("paper")
+    })
+
+    scissors.addEventListener("click", function() {
+        game("scissors")
+    })
+
+    spock.addEventListener("click", function() {
+        game("spock")
+    })
+
+    lizard.addEventListener("click", function() {
+        game("lizard")
+    })
+}
+
+theGame();
