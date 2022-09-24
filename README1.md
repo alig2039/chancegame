@@ -1,3 +1,5 @@
+## CHANCE GAME
+
 ## User Experience (UX)
 
 1. Users can easily understand the main purpose of the site just from looking at the landing page screen
